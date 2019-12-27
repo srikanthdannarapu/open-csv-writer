@@ -11,18 +11,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MyUser {
-	@CsvBindByPosition(position = 0)
+	//@CsvBindByPosition(position = 0)
 	@CsvBindByName(column = "NAME")
     private String name;
-	@CsvBindByPosition(position = 1)
+	//@CsvBindByPosition(position = 1)
 	@CsvBindByName(column = "EMAIL")
     private String email;
-	@CsvBindByPosition(position = 2)
+	//@CsvBindByPosition(position = 2)
 	@CsvBindByName(column = "PHONE_NO")
     private String phoneNo;
-	@CsvBindByPosition(position = 3)
+	//@CsvBindByPosition(position = 3)
 	@CsvBindByName(column = "COUNTRY")
     private String country;
+	//@CsvBindByPosition(position = 4)
+	@CsvBindByName(column = "AGE")
+	private int age;
+	//@CsvBindByPosition(position = 5)
+	@CsvBindByName(column = "AMOUNT")
+	private double amount;
 
 	
 }
